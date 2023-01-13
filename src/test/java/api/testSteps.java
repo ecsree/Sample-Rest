@@ -47,4 +47,19 @@ public class testSteps {
 	    System.out.println(response.getStatusCode());
 	}
 
+@Given("API url {string}")
+public void api_url(String string) {
+    
+}
+
+@When("Authorized  user create a program")
+public void authorized_user_create_a_program() {
+   
+}
+
+@Then("Validate the Program is added")
+public void validate_the_program_is_added() {
+    
+}
+
 }
