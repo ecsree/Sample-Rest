@@ -1,13 +1,14 @@
-Feature: Batch
+ Feature: Program
 
-  Scenario: To get a batch details
-    Given list of batch is available
-    When I send a request with programId
-    Then the batch details shoulde be displayed
+  Background: 
+    Given API url
 
-    
-    Scenario: create program
-    Given API url ""
-    When Authorized  user create a program
-    Then  Validate the Program is added
+  Scenario: Authorized User is able to add program
+    When Authorized User add program
+    Then program is added
+
+  Scenario: User able to see all the programs
+    When user submit get request
+    Then All programs is displayed
+ 
     
