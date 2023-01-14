@@ -73,7 +73,7 @@ public class StepDefinition {
 		RequestSpecification rs = RestAssured.given();
 		 response = rs.when().get("/allPrograms");
 		System.out.println(response);
-		//System.out.println("Response Body is =>  " + response.asString());
+	   	//System.out.println("Response Body is =>  " + response.asString());
 		statuscode=response.getStatusCode();
 		System.out.println("Responce status code is:"+statuscode);
 	}
