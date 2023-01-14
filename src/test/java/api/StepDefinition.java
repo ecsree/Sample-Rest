@@ -100,7 +100,7 @@ public class StepDefinition {
 		Assert.assertEquals(bodyAsString.contains("API_LEARNER****") /*Expected value*/, true /*Actual Value*/);
 	
 		
-		  Headers allHeaders = response.headers(); 
+		 Headers allHeaders = response.headers(); 
 		 // Iterate over all the Headers 
 		 for(Header header : allHeaders) { 
 		   System.out.println("Key: " + header.getName() + " Value: " + header.getValue()); 
